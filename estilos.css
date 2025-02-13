@@ -1,3 +1,26 @@
+header {
+    background-image: url(./FOTOS/pueblo.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    height: 300px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255); 
+    font-size: 50px;
+}
+
+
 #columnas {
     display: flex;
+}
+
+.column_lado {
+    width: 20%;
+    text-align: center;
+}
+
+.column_centro {
+    width: 50%;
+    text-align: center;
 }
