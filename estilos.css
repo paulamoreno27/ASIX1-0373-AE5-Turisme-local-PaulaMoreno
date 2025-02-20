@@ -1,5 +1,5 @@
 header {
-    background-image: url(./FOTOS/pueblo.jpg); 
+    background-image: url(./FOTOS/castellon.jpg); 
     background-size: cover; 
     background-position: center; 
     height: 300px; 
@@ -10,9 +10,9 @@ header {
     font-size: 50px;
 }
 
-
 #columnas {
     display: flex;
+    margin: 20px;
 }
 
 .column_lado {
@@ -21,6 +21,43 @@ header {
 }
 
 .column_centro {
-    width: 50%;
+    width: 60%;
     text-align: center;
+}
+
+.sitios {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.ficha {
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.ficha img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.ubicacion {
+    font-size: 13px;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+ul li a:hover {
+    text-decoration: underline;
 }
