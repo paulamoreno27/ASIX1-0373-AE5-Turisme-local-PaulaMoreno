@@ -1,6 +1,5 @@
 header {
     background-image: url(./FOTOS/castellon.jpg); 
-    background-size: cover; 
     background-position: center; 
     height: 300px; 
     display: flex;
@@ -8,6 +7,10 @@ header {
     justify-content: center;
     color: rgb(255, 255, 255); 
     font-size: 50px;
+}
+
+body{
+    background-color: #e5cdaf;
 }
 
 #columnas {
@@ -35,7 +38,6 @@ header {
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .ficha img {
@@ -46,6 +48,10 @@ header {
 .ubicacion {
     font-size: 13px;
     text-decoration: none;
+}
+
+.descripcion {
+    text-align: justify;
 }
 
 ul {
