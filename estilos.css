@@ -33,7 +33,6 @@ body{
     text-align: center;
 }
 
-
 #titulo_introduccion, #titulo_historia, #titulo_gas_fiest {
     text-align: center;
 }
@@ -59,11 +58,14 @@ body{
     border: 1px solid #ddd;
     padding: 15px;
     border-radius: 8px;
+    background-color: white;
+    color: #e5cdaf;
 }
 
 .ficha img {
     width: 100%;
     border-radius: 8px;
+    margin-bottom: 10px;
 }
 
 #foto_playa {
@@ -74,6 +76,7 @@ body{
 .ubicacion {
     font-size: 13px;
     text-decoration: none;
+    color: black;
 }
 
 .descripcion {
@@ -94,22 +97,44 @@ ul li a:hover {
     text-decoration: underline;
 }
 
-.noticia {
-    margin-left: 20px;
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+    margin: 13px;
+    padding: 10px;
 }
 
-.noticia-img {
+.card-img {
     width: 100%;
-    height: auto;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 2px;
 }
 
-.noticia-titulo {
-    font-size: 20px;
-    font-weight: bold;
-    text-align: justify;
+.card-body {
+    padding: 10px;
 }
 
-.noticia-texto {
+.card-title {
     font-size: 18px;
     text-align: justify;
+    color: #e5cdaf;
+    margin-top: 2px;
+}
+
+.card-text{
+    font-size: 18px;
+    text-align: justify;
+    color: #e5cdaf;
+}
+
+#boton{
+    padding: 10px 20px;
+    margin: 20px auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #e5cdaf;
+    text-align: center;
 }
