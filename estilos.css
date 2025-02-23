@@ -1,3 +1,17 @@
+/* Fuentes */
+.raleway {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bebas-neue-regular {
+    font-family: "Bebas Neue", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
 header {
     background-image: url(./FOTOS/castellon.jpg); 
     background-position: center; 
@@ -5,11 +19,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: rgb(255, 255, 255); 
-    font-size: 50px;
+    color: #ffffff;
+    font-size: 70px;
+    font-family: "Bebas Neue", serif;    
 }
 
-body{
+body {
     background-color: #e5cdaf;
 }
 
@@ -23,7 +38,7 @@ body{
     text-align: center;
 }
 
-.column_lado_der{
+.column_lado_der {
     width: 20%;
     text-align: center;
 }
@@ -33,12 +48,17 @@ body{
     text-align: center;
 }
 
-#titulo_introduccion, #titulo_historia, #titulo_gas_fiest {
+#titulo_introduccion, #titulo_historia, #titulo_gal, #titulo_menu, #lugares, #titulo_not {
     text-align: center;
+    color: #ae7939;
+    font-size: 35px;
+    font-family: "Bebas Neue", serif;
 }
 
-#introduccion, #historia, #gastro_fiest {
+p {
+    font-family: "Raleway", serif;
     text-align: justify;
+    color: white;
 }
 
 #mapa {
@@ -46,6 +66,12 @@ body{
     height: 450px;
     padding: 2px;
     border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom en el mapa */
+#mapa:hover {
+    transform: scale(1.05);  /* Aumenta el tamaño del mapa al pasar el ratón */
 }
 
 .sitios {
@@ -59,7 +85,13 @@ body{
     padding: 15px;
     border-radius: 8px;
     background-color: white;
-    color: #e5cdaf;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom en los sitios (fichas) */
+.ficha:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Sombra para mayor profundidad */
 }
 
 .ficha img {
@@ -68,19 +100,27 @@ body{
     margin-bottom: 10px;
 }
 
-#foto_playa {
+#foto_playa, #foto_parque {
     width: 100%;
     height: 40%;
 }
 
 .ubicacion {
-    font-size: 13px;
+    font-size: 15px;
     text-decoration: none;
-    color: black;
+    color: #ae7939;
+    text-align: center;
 }
 
 .descripcion {
     text-align: justify;
+    color: #e5cdaf;
+}
+
+.titulos_sitios {
+    font-family: "Bebas Neue", serif;
+    color: #ae7939;
+    font-size: 30px;
 }
 
 ul {
@@ -89,20 +129,24 @@ ul {
 }
 
 ul li a {
-    text-decoration: none;
-    color: #007BFF;
-}
-
-ul li a:hover {
-    text-decoration: underline;
+    color: white;
+    font-family: "Raleway", serif;
+    text-align: justify;
 }
 
 .card {
     border: 1px solid #ddd;
     border-radius: 8px;
     background-color: white;
-    margin: 13px;
+    margin: 30px;
     padding: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom en las noticias */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .card-img {
@@ -116,19 +160,20 @@ ul li a:hover {
 }
 
 .card-title {
-    font-size: 18px;
-    text-align: justify;
-    color: #e5cdaf;
+    font-size: 19px;
+    text-align: center;
+    color: #ae7939;
     margin-top: 2px;
+    font-family: "Bebas Neue", serif;
 }
 
-.card-text{
-    font-size: 18px;
+.card-text {
+    font-size: 17px;
     text-align: justify;
     color: #e5cdaf;
 }
 
-#boton{
+#boton {
     padding: 10px 20px;
     margin: 20px auto;
     background-color: white;
@@ -137,4 +182,51 @@ ul li a:hover {
     text-decoration: none;
     color: #e5cdaf;
     text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+    padding: 16px;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Zoom en la galería de imágenes */
+.image img:hover {
+    /* Aumenta el tamaño de las imágenes */
+    transform: scale(1.1);  
+}
+
+#imagen5 {
+    width: 100%;
+    height: 75%;
+}
+
+#imagen6 {
+    width: 100%;
+    height: 75%;
+}
+
+.card-img, .ficha img {
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Aumenta el tamaño del contenedor para resaltar */
+.card-img:hover, .ficha img:hover {
+    transform: scale(1.1);  
+}
+
+/* Efecto de zoom para el contenedor de las noticias y fichas */
+.card:hover, .ficha:hover {
+    transform: scale(1.05); 
+    /* Agrega sombra para el efecto de profundidad */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  
 }

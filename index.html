@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Turismo Castellón</title>
     <link rel="stylesheet" href="./estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Moderustic:wght@300..800&family=Raleway&family=Rowdies:wght@300;400;700&family=Sigmar&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,11 +18,14 @@
     </header>
     <div id="columnas">
         <div class="column_lado_izq" id="menu">
-            <h1>Menú</h1>
-            <ul>
-                <li><a href="#galeria">Galería de Imágenes</a></li>
-                <li><a href="#lugares">Lugares de Interés</a></li>
-                <li><a href="#mapa">Mapa</a></li>
+            <h1 id="titulo_menu">Menú</h1>
+            <ul id="menu">
+                <li><a href="#titulo_introduccion">1. Introducción</a></li>
+                <li><a href="#mapa">- Mapa</a></li>
+                <li><a href="#titulo_historia">- Historia</a></li>
+                <li><a href="#titulo_gal">2. Galería de Imágenes</a></li>
+                <li><a href="#lugares">3. Lugares de Interés</a></li>
+                <li><a href="#titulo_not">4. Noticias</a></li>
             </ul>
         </div>
         
@@ -25,7 +34,7 @@
                 <h1 id="titulo_introduccion">Introducción</h1><hr>
                 <p id="introduccion">Castellón de la Plana es la capital de la provincia de Castellón, situada en la Comunidad Valenciana, en la costa este de España. Con una población de aproximadamente <strong>175.000</strong>habitantes, es una ciudad que combina la riqueza de su patrimonio histórico con la belleza de su entorno natural. Su ubicación privilegiada, entre el mar Mediterráneo y la montaña, la convierte en un destino ideal para quienes buscan turismo cultural, gastronómico y de naturaleza. Gracias a su clima mediterráneo, con inviernos suaves y veranos cálidos, Castellón es perfecta para visitar durante todo el año. Además, la ciudad cuenta con una variada oferta turística que incluye mercados tradicionales, playas, museos y una vibrante vida cultural.</p>
 
-                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31101.57827659714!2d-0.04828200506688369!3d39.98635629644059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5ff36a498d1b0b%3A0x403d0eb27305840!2sCastell%C3%B3n%20de%20la%20Plana%2C%20Castell%C3%B3n!5e0!3m2!1ses!2ses!4v1708616092925!5m2!1ses!2ses" frameborder="0"></iframe><br><br><br>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31101.57827659714!2d-0.04828200506688369!3d39.98635629644059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd5ff36a498d1b0b%3A0x403d0eb27305840!2sCastell%C3%B3n%20de%20la%20Plana%2C%20Castell%C3%B3n!5e0!3m2!1ses!2ses!4v1708616092925!5m2!1ses!2ses" frameborder="0"></iframe><br><br>
             </div>
             <div id="historia">
                 <h2 id="titulo_historia">Historia</h2><hr>
@@ -43,48 +52,64 @@
                 <strong>Actualidad: </strong>Hoy es una ciudad moderna que combina historia, cultura y turismo, destacando festividades como la Fiesta de la Magdalena.
                 </p><br>
             </div>
-            <div id="gastronomia_fiestas">
-                <h2 id="titulo_gas_fiest">Gastronomía y Fiestas</h2><hr>
-                <p id="gastro_fiest">
-                    <strong>Gastronomía: </strong>Castellón ofrece una rica cocina mediterránea, destacando platos como la paella, el arroz a banda, y el tombet. No puedes dejar de probar los pastissets de boniato y la coca de tomate, ideales para disfrutar del sabor local.<br><br>
-
-                    <strong>Fiestas: </strong>Las Fiestas de la Magdalena, en marzo, son las más importantes, con desfiles, música y fuegos artificiales. Otras celebraciones como Sant Joan, San Pedro en el Grau, y las Fiestas de la Mare de Déu del Lledó llenan la ciudad de alegría y tradición durante todo el año.
-                </p><br><br>
+            <h2 id="titulo_gal">Galeria de imagenes</h2><hr>
+            <div class="gallery">
+                <div class="image">
+                    <img src="./FOTOS/cast1.jpeg" alt="Iglésia Castellón">
+                </div>
+                <div class="image">
+                    <img src="./FOTOS/cast2.jpg" alt="Playa del Pinar">
+                </div>
+                <div class="image">
+                    <img src="./FOTOS/cast3.jpg" alt="Museo arte Castellón">
+                </div>
+                <div class="image">
+                    <img src="./FOTOS/cast4.jpg" alt="Parque Ribalta">
+                </div>
+                <div class="image">
+                    <img id="imagen5" src="./FOTOS/cast5.jpg" alt="Ayuntamiento Castellón">
+                </div>
+                <div class="image">
+                    <img id="imagen6" src="./FOTOS/cast6.jpg" alt="Monumento Castellón">
+                </div>
             </div>
             <h2 id="lugares">Lugares de Interés</h2><hr>
             <div class="sitios">
                 <div class="ficha">
-                    <h2>Playa del Pinar</h2>
+                    <h2 class="titulos_sitios">Playa del Pinar</h2>
                     <img id="foto_playa" src="./FOTOS/playa.jpg" alt="Playa del Pinar">
-
-                    <p class="descripcion">La Playa del Pinar es una de las principales playas urbanas de Castellón, famosa por su arena fina y aguas tranquilas. Con una excelente infraestructura de servicios y un ambiente relajado, es ideal para disfrutar de un día de sol y mar. Además, cuenta con un paseo marítimo que conecta con otros puntos de interés de la ciudad. Es perfecta para familias, grupos de amigos y quienes buscan un lugar de descanso junto al mar. 🌞🏖️</p> <p><strong>Ubicación:</strong><a class="ubicacion" href="https://www.google.com/maps/place/Playa+del+Pinar/@39.9847684,-0.0517732,17z/data=!3m1!4b1!4m6!3m5!1s0xd5ffe2067f91357:0xb94331b4304d913a!8m2!3d39.9847684!4d-0.0491845!16s%2Fg%2F11c0lf63dd">Playa del Pinar, 12006 Castelló de la Plana, Castellón</a>
+                    <p class="descripcion">La Playa del Pinar es una de las principales playas urbanas de Castellón, famosa por su arena fina y aguas tranquilas. Con una excelente infraestructura de servicios y un ambiente relajado, es ideal para disfrutar de un día de sol y mar. Además, cuenta con un paseo marítimo que conecta con otros puntos de interés de la ciudad. Es perfecta para familias, grupos de amigos y quienes buscan un lugar de descanso junto al mar. 🌞🏖️</p><p class="ubicacion"><strong>Ubicación:</strong>
+                    <a class="ubicacion" href="https://www.google.com/maps/place/Playa+del+Pinar/@39.9847684,-0.0517732,17z/data=!3m1!4b1!4m6!3m5!1s0xd5ffe2067f91357:0xb94331b4304d913a!8m2!3d39.9847684!4d-0.0491845!16s%2Fg%2F11c0lf63dd">Playa del Pinar, 12006 Castelló de la Plana, Castellón</a>
                     </p>
                 </div>
 
                 <div class="ficha">
-                    <h2>Parque Ribalta</h2>
-                    <img src="./FOTOS/parque.jpg" alt="Parque Ribalta">
+                    <h2 class="titulos_sitios">Parque Ribalta</h2>
+                    <img id="foto_parque" src="./FOTOS/parque.jpg" alt="Parque Ribalta">
 
-                    <p class="descripcion">El Parque Ribalta es un espacio verde que se encuentra en el centro de Castellón de la Plana, ideal para pasear, hacer deporte o relajarse en sus amplias zonas ajardinadas. Inaugurado en 1915, este parque cuenta con una variada vegetación y está lleno de rincones tranquilos, perfectos para disfrutar de la naturaleza en pleno corazón de la ciudad. Es uno de los lugares más emblemáticos y queridos por los habitantes locales. 🌳🌸</p> <p><strong>Ubicación:</strong><a class="ubicacion" href="https://www.google.com/maps/place/Parque+Ribalta/@39.986522,-0.0395102,17z/data=!3m1!4b1!4m6!3m5!1s0xd5ffe200b9b7bdb:0x81e0723fc58f7422!8m2!3d39.986522!4d-0.0370275!16s%2Fg%2F11c3g2pv9r">Avenida de la Mare de Déu del Lledó, 12002 Castelló de la Plana, Castellón</a></p>
+                    <p class="descripcion">El Parque Ribalta es un espacio verde que se encuentra en el centro de Castellón de la Plana, ideal para pasear, hacer deporte o relajarse en sus amplias zonas ajardinadas. Inaugurado en 1915, este parque cuenta con una variada vegetación y está lleno de rincones tranquilos, perfectos para disfrutar de la naturaleza en pleno corazón de la ciudad. Es uno de los lugares más emblemáticos y queridos por los habitantes locales. 🌳🌸</p><br> <p class="ubicacion"><strong>Ubicación:</strong>
+                    <a class="ubicacion" href="https://www.google.com/maps/place/Parque+Ribalta/@39.986522,-0.0395102,17z/data=!3m1!4b1!4m6!3m5!1s0xd5ffe200b9b7bdb:0x81e0723fc58f7422!8m2!3d39.986522!4d-0.0370275!16s%2Fg%2F11c3g2pv9r">Avenida de la Mare de Déu del Lledó, 12002 Castelló de la Plana, Castellón</a></p>
                 </div>
 
                 <div class="ficha">
-                    <h2>Museo de Bellas Artes</h2>
+                    <h2 class="titulos_sitios">Museo de Bellas Artes</h2>
                     <img src="./FOTOS/museo.jpg" alt="Museo de Bellas Artes">
 
-                    <p class="descripcion">El Museo de Bellas Artes de Castellón alberga una rica colección de arte desde el siglo XVI hasta la actualidad. Se destacan obras de artistas como José Royo, Vicente López y Benlliure, entre otros. Además de sus exposiciones permanentes, organiza eventos culturales y temporales que permiten conocer mejor la historia del arte en la región. Un lugar perfecto para los amantes del arte y la cultura. 🖼️🎨</p> <p><strong>Ubicación:</strong><a class="ubicacion" href="https://www.google.com/maps/place/Museo+de+Bellas+Artes+de+Castellón/@39.9869222,-0.0412119,17z/data=!3m1!4b1!4m6!3m5!1s0xd5ffe20ffb8b1a1:0x893b9a9c314c72f1!8m2!3d39.9869222!4d-0.0387239!16s%2Fg%2F11c0fgr7_9">Carrer del Santíssim Crist, 12002 Castelló de la Plana, Castellón</a></p>
+                    <p class="descripcion">El Museo de Bellas Artes de Castellón alberga una rica colección de arte desde el siglo XVI hasta la actualidad. Se destacan obras de artistas como José Royo, Vicente López y Benlliure, entre otros. Además de sus exposiciones permanentes, organiza eventos culturales y temporales que permiten conocer mejor la historia del arte en la región. Un lugar perfecto para los amantes del arte y la cultura. 🖼️🎨</p><p class="ubicacion"><strong>Ubicación:</strong>
+                    <a class="ubicacion" href="https://www.google.com/maps/place/Museo+de+Bellas+Artes+de+Castellón/@39.9869222,-0.0412119,17z/data=!3m1!4b1!4m6!3m5!1s0xd5ffe20ffb8b1a1:0x893b9a9c314c72f1!8m2!3d39.9869222!4d-0.0387239!16s%2Fg%2F11c0fgr7_9">Carrer del Santíssim Crist, 12002 Castelló de la Plana, Castellón</a></p>
                 </div>
                 <div class="ficha">
-                    <h2>Mercado Central de Castellón</h2>
-                    <img src="./FOTOS/mercadocastellon.jpg" alt="Lugar 1">
-                    <p class="descripcion">Un emblemático mercado situado en el centro de la ciudad, inaugurado en 1949. Ofrece productos frescos como frutas, verduras, carnes y pescados, combinando tradición y modernidad. Es un punto de encuentro popular para locales y turistas, y su arquitectura refleja el encanto mediterráneo. Ideal para disfrutar de la gastronomía local. 🌿🛒</p><p><strong>Ubicación:</strong><a class="ubicacion" href="https://www.google.com/maps/place/Mercado+Central+de+Castell%C3%B3n/@39.9857445,-0.0374766,17z/data=!3m1!4b1!4m6!3m5!1s0xd5ffe2b51370feb:0x7e4802b655960dae!8m2!3d39.9857445!4d-0.0374766!16s%2Fg%2F11clftzr31?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D">Plaça Major, S/N, 12001 Castelló de la Plana, Castelló</p></a>
+                    <h2 class="titulos_sitios">Mercado Central de Castellón</h2>
+                    <img src="./FOTOS/mercadocastellon.jpg" alt="Mercado Central de Castellón">
+                    <p class="descripcion">Un emblemático mercado situado en el centro de la ciudad, inaugurado en 1949. Ofrece productos frescos como frutas, verduras, carnes y pescados, combinando tradición y modernidad. Es un punto de encuentro popular para locales y turistas, y su arquitectura refleja el encanto mediterráneo. Ideal para disfrutar de la gastronomía local. 🌿🛒</p><br><p class="ubicacion"><strong>Ubicación:</strong>
+                    <a class="ubicacion" href="https://www.google.com/maps/place/Mercado+Central+de+Castell%C3%B3n/@39.9857445,-0.0374766,17z/data=!3m1!4b1!4m6!3m5!1s0xd5ffe2b51370feb:0x7e4802b655960dae!8m2!3d39.9857445!4d-0.0374766!16s%2Fg%2F11clftzr31?hl=es-419&entry=ttu&g_ep=EgoyMDI1MDIxNy4wIKXMDSoASAFQAw%3D%3D">Plaça Major, S/N, 12001 Castelló de la Plana, Castelló</p></a>
                 </div>
             </div><br>
             <a id="boton" href="#titulo">Volver arriba</a>
         </div>
 
         <div class="column_lado_der" id="noticias">
-            <h1>Noticias</h1>
+            <h1 id="titulo_not">Noticias</h1>
         
             <div class="card">
                 <img src="./FOTOS/fiestas_magdalena.jpg" alt="Noticia 1" class="card-img">
