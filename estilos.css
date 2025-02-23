@@ -296,6 +296,11 @@ ul li a {
         justify-content: center;
     }
 
+    .descripcion{
+        font-size: 14px;
+        color: #e5cdaf;
+    }
+
     #imagen6, #imagen5 {
         height: auto;
     }
