@@ -173,15 +173,20 @@ ul li a {
     color: #e5cdaf;
 }
 
-#boton {
-    padding: 10px 20px;
-    margin: 20px auto;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    text-decoration: none;
-    color: #e5cdaf;
+#div_bot {
+    display: block; 
+    align-items: center;
     text-align: center;
+}
+
+#boton {
+    width: 100px; 
+    padding: 10px;
+    background-color: #ae7939; 
+    color: white; 
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
 }
 
 .gallery {
@@ -227,6 +232,85 @@ ul li a {
 /* Efecto de zoom para el contenedor de las noticias y fichas */
 .card:hover, .ficha:hover {
     transform: scale(1.05); 
-    /* Agrega sombra para el efecto de profundidad */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  
 }
+
+@media screen and (max-width: 700px) {
+    /* Ajustes para el encabezado */
+    header {
+        height: 250px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    /* Cambios en la distribucion de las columnas */
+    #columnas {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .column_lado_izq, .column_lado_der, .column_centro {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Ajustes para los títulos */
+    #titulo_introduccion, #titulo_historia, #titulo_gal, #titulo_menu, #lugares, #titulo_not {
+        font-size: 30px;
+    }
+
+    /* Ajustes en el mapa */
+    #mapa {
+        height: 300px;
+    }
+
+    #lugares {
+        margin-top: 50px;
+    }
+
+    /* Modificar las fichas de sitios */
+    .sitios {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .ficha {
+        padding: 10px;
+    }
+
+    /* Cambios en la galería */
+    .gallery {
+        grid-template-columns: 1fr; /* Crea una sola columna que ocupa todo el ancho disponible */
+        gap: 20px; /* Espaciado uniforme */
+    }
+
+    .image {
+        display: flex;
+        justify-content: center;
+    }
+
+    #imagen6, #imagen5 {
+        height: auto;
+    }
+
+    .image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* Ajustes en las tarjetas de noticias */
+    .card {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    /* Ajustes en el botón */
+    #boton {
+        width: 100%;
+        padding: 12px 0;
+        margin: 20px auto;
+        display: block;
+        text-align: center;
+    }
+}
+
